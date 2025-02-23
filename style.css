@@ -1,0 +1,424 @@
+*{
+
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.pfp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.pfp img {
+  border-radius: 500px;
+  width: 130px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+  rgba(0, 0, 0, 0.5) 5px 10px 15px;}
+  /* From Uiverse.io by Codewithvinay */ 
+
+.button-container {
+  display: flex;
+  background-color: rgb(32, 32, 32);
+  width: 80vh;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(0, 0, 0, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+}
+
+.button-container:hover {
+  width: 900px;
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+.left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text1 h1 {
+  text-align: center  ;
+  color: #000000  ;
+  font-size: 30px;
+  margin-top: 30px;
+
+} 
+.exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.exp p {
+  margin-top: -10px;
+  text-align: center  ;
+}
+.card1 {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 1s;
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.button1 {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 80px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ .button1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 80px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .button1:hover {
+  color: #e8e8e8;
+ }
+ 
+ .button1:hover::before {
+  width: 100%;
+ }
+ .btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .abt-me h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .abt-me p  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
+ .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .wallet {
+  --bg-color: #000000;
+  --bg-color-light: #f0e7ff;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(0, 0, 0, 0.48);
+}
+
+.card {
+  width: 220px;
+  height: 321px;
+  background: #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+  rgba(0, 0, 0, 0.5) 5px 10px 15px;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  margin: 10px;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card:hover .overlay {
+  transform: scale(4) translateZ(0);
+  
+}
+
+.card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.card:hover .circle:after {
+  background: var(--bg-color-light);
+  background-color: #000000;
+  
+}
+
+.card:hover p {
+  color: var(--text-color-hover);
+}
+
+.card p {
+  font-size: 17px;
+  color: #4c5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+  z-index: 10000;
+  transform: translateZ(0);
+}
+
+.overlay {
+  width: 118px;
+  position: absolute;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 70px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+.prjct {
+  display: flex;
+  flex-wrap: wrap; /* Agar elemen turun ke bawah jika tidak cukup */
+  gap: 10px; /* Jarak antar div */  
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+}
+
+/* From Uiverse.io by bhaveshxrawat */ 
+/* Container agar kartu berada di tengah */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full tinggi layar */
+  background-color: #ffffff; /* Warna latar belakang */
+}
+
+/* Kartu */
+.card2 {
+  width: 190px; /* Ukuran default */
+  max-width: 90vw; /* Agar tidak terlalu besar di layar kecil */
+  aspect-ratio: 1 / 1; /* Menjaga rasio */
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+/* Teks di dalam kartu */
+.card2 h2 {
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Efek animasi gradient */
+.card2::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Latar belakang dalam kartu */
+.card2::after {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+/* Responsif: Ubah ukuran kartu jika layar kecil */
+@media (max-width: 480px) {
+  .card2 {
+    width: 80vw; /* Lebar responsif */
+    aspect-ratio: 3 / 4; /* Tetap proporsional */
+  }
+  .card2 h2 {
+    font-size: 1.5em; /* Perkecil teks agar tidak terlalu besar */
+  }
+}
+.icn {
+  display: flex;
+  flex-wrap: wrap; /* Agar elemen turun ke bawah jika tidak cukup */
+  gap: 10px; /* Jarak antar div */  
+  justify-content: center;
+  align-items: center;
+}

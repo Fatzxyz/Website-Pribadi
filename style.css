@@ -1,6 +1,5 @@
 *{
-
-  font-family: "Raleway", serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
@@ -232,8 +231,8 @@
 }
 
 .card {
-  width: 220px;
-  height: 321px;
+  width: 170px;
+  height: 270px;
   background: #f3f3f3;
   border-radius: 20px;
   overflow: hidden;
@@ -314,23 +313,26 @@
 .circle svg {
   z-index: 10000;
   transform: translateZ(0);
+  width: 300px;
+  height: 70px;
 }
 
 .overlay {
-  width: 118px;
+  
+  width: 110px;
   position: absolute;
-  height: 118px;
+  height: 110px;
   border-radius: 50%;
   background: var(--bg-color);
-  top: 70px;
-  left: 50px;
+  top: 80px;
+  left: 34px;
   z-index: 0;
   transition: transform 0.3s ease-out;
 }
 .prjct {
   display: flex;
   flex-wrap: wrap; /* Agar elemen turun ke bawah jika tidak cukup */
-  gap: 10px; /* Jarak antar div */  
+  gap: 0px; /* Jarak antar div */  
   justify-content: center;
   align-items: center;
 }
@@ -354,10 +356,10 @@
 
 /* Kartu */
 .card2 {
-  width: 190px; /* Ukuran default */
-  max-width: 90vw; /* Agar tidak terlalu besar di layar kecil */
+  width: 200px; /* Ukuran default */
+  max-width: 40vw; /* Agar tidak terlalu besar di layar kecil */
   aspect-ratio: 1 / 1; /* Menjaga rasio */
-  background: #ffffff;
+  background: #f0f0f0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -400,7 +402,7 @@
 .card2::after {
   content: '';
   position: absolute;
-  background: #ffffff;
+  background: #f3f3f3;
   inset: 5px;
   border-radius: 15px;
 }
@@ -417,8 +419,8 @@
 }
 .icn {
   display: flex;
-  flex-wrap: wrap; /* Agar elemen turun ke bawah jika tidak cukup */
-  gap: 10px; /* Jarak antar div */  
+  flex-wrap: wrap;
+  gap: 0px; /* Jarak antar div */  
   justify-content: center;
   align-items: center;
 }
